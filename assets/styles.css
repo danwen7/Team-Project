@@ -5,6 +5,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #343F3E;
 }
 
 
@@ -21,10 +22,10 @@ nav ul {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    color: #000000;
     letter-spacing: 0;
     color: #343F3E;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -55,23 +56,10 @@ section {
     transition: all 0.25s linear;
 }
 
-section>div {
-    column-count: 2;
-}
-
-@media screen and (max-width:1400px) {}
-
 @media screen and (max-width:1100px) {
     section {
         max-width: 90%;
     }
-}
-
-@media screen and (max-width:600px) {
-    section>div {
-        column-count: 1;
-    }
-
 }
 
 section h2 {
@@ -118,14 +106,14 @@ section>div {
 
 section ul {
     list-style-type: disc;
-    list-style-image: ;
 }
 
 .clickable-list {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    color: #4e6e48
+    color: #4e6e48;
+    flex-wrap: wrap;
 }
 
 .clickable-list li {
@@ -179,4 +167,18 @@ section img {
     to {
         opacity: 100%;
     }
+}
+
+@media screen and (max-width:800px) {
+    section>div {
+        column-count: 1;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    section>div {
+        column-count: 3;
+    }
+
 }
